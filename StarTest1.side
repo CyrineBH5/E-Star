@@ -1,0 +1,231 @@
+{
+  "id": "cac70d02-6291-40f7-a629-c6066a22171f",
+  "version": "2.0",
+  "name": "StarTest1",
+  "url": "http://localhost:4200",
+  "tests": [{
+    "id": "5a933d88-01b6-4793-b8c3-aff8a32f2d0b",
+    "name": "LoginFail",
+    "commands": [{
+      "id": "34e1cac0-b235-4b24-92fc-1538d94d43d0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "318c6471-a0fa-4fb7-9c12-666129019b98",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28b4fb2b-652b-42f1-ac94-b59e5d12e979",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.btn-cta:nth-child(4) > a", "css:finder"],
+        ["xpath=//div[@id='page']/nav/div/div/div/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "112e6cb5-2bd9-4c6d-9e67-1dc2c43049e1",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "syrinebh05@gmail.com"
+    }, {
+      "id": "f6340413-c5f4-4371-9103-9f5c03034f4c",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ng-dirty:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "azerty"
+    }, {
+      "id": "ab0a0fe0-09b7-4944-b3b6-46e42dbae3b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ng-dirty:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8315382-f24e-48cf-a15b-bce4941117ef",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ng-dirty:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "azertyaa"
+    }, {
+      "id": "8f62219e-506e-432e-86e3-af45e81cc581",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='signIn']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "742ff173-4e96-4ae1-9706-88c97262119f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-wrap",
+      "targets": [
+        ["css=.login-wrap", "css:finder"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af30a9b2-8c5c-4801-ba3a-25896ef132af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//form/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Login failed. Try again !!!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81e15b12-47f3-4cfb-9905-ee0308d0924a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//form/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Login failed. Try again !!!')]", "xpath:innerText"]
+      ],
+      "value": "Login failed. Try again !!!"
+    }]
+  }, {
+    "id": "b45db43e-4fba-4b9a-95a3-4ff3b32c60f3",
+    "name": "LoginSucces",
+    "commands": [{
+      "id": "b697efa1-1721-4baf-b038-83a4a1650a93",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35497bdb-35e6-4890-8884-15ccde8eae16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1f6c4a4-d80d-40d3-a688-b9e57ad7867e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-cta:nth-child(4) span",
+      "targets": [
+        ["css=.btn-cta:nth-child(4) span", "css:finder"],
+        ["xpath=//div[@id='page']/nav/div/div/div/div[2]/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c4811cf-b067-45c4-aa78-8be338bf2ac2",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "syrinebh05@gmail.com"
+    }, {
+      "id": "b9a3bc91-ed0a-443d-b3b8-a3884dbc4a69",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ng-dirty:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "azerty"
+    }, {
+      "id": "172fde27-6736-4575-9a91-cfca097bf8ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-wrap",
+      "targets": [
+        ["css=.login-wrap", "css:finder"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "295a0020-0fe6-4e15-951e-3e37aa9f76e2",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ng-dirty:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "8bd58276-862a-4433-a112-5c36618c5505",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='signIn']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "37fbd6d3-d69c-4e77-967f-034a1295c0f0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}
